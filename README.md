@@ -162,16 +162,16 @@ Welcome to the **"Hidden Fox"** repository. All features and tweaks are actively
    * **Behavior Note:** 
     If you attempt to download a "suspicious file," it will download to a temporary directory first. The file will only be moved to your destination folder after you click "Confirm" to download the suspicious file.
 
-    > [!IMPORTANT]
-> You may see a "right arrow" icon as shown in the screenshot below. Clicking on the file in the list again will bring up the confirmation window, but not before.
+    [!IMPORTANT]
+    You may see a "right arrow" icon as shown in the screenshot below. Clicking on the file in the list again will bring up the confirmation window, but not before.
 
     *Screenshot:*
 
-    <img width="320" height="86" alt="image" src="https://github.com/user-attachments/assets/e1595ff1-ee7d-4d57-934c-f56ba44f7ae6" />
+     <img width="320" height="86" alt="image" src="https://github.com/user-attachments/assets/e1595ff1-ee7d-4d57-934c-f56ba44f7ae6" />
 
-    *Screenshot after clicking on the file in the download list:*
+     *Screenshot after clicking on the file in the download list:*
 
-    <img width="447" height="184" alt="image" src="https://github.com/user-attachments/assets/23948070-bfc0-4bc5-92d2-7836cd73d20f" />
+     <img width="447" height="184" alt="image" src="https://github.com/user-attachments/assets/23948070-bfc0-4bc5-92d2-7836cd73d20f" />
 
 
 
