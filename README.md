@@ -64,7 +64,7 @@
 
 
 * **Инструкция по использованию:**
-  1. Создайте файл `Temporary_protection_disablement.bat` и скопируйте в него код скрипта (Или загрузите https://github.com/Hiddenfoxwere/windows-admin-tweaks/blob/WereFox-place/Temporary_protection_disablement.bat.
+  1. Создайте файл `Temporary_protection_disablement.bat` и скопируйте в него код скрипта (Или загрузите [Temporary_protection_disablement.bat](https://github.com/Hiddenfoxwere/windows-admin-tweaks/blob/WereFox-place/Temporary_protection_disablement.bat)**
   2. Запустите файл двойным кликом (система сама запросит права Администратора - нужны права Админа).
   3. Выполните необходимые действия по загрузке или тестированию.
   4. Вернитесь в окно консоли и **нажмите любую кнопку**, чтобы вернуть настройки безопасности назад.
@@ -191,7 +191,7 @@ Welcome to the **"Hidden Fox"** repository. All features and tweaks are actively
 An all-in-one batch script that automatically requests admin privileges, disables Windows Firewall and SmartScreen, and securely restores all settings back to their original state once the user presses any key.
 
 * **How to use:**
-  1. Save the code into a file named `Temporary_protection_disablement.bat` (or download https://github.com/Hiddenfoxwere/windows-admin-tweaks/blob/WereFox-place/Temporary_protection_disablement.bat ).
+  1. Save the code into a file named `Temporary_protection_disablement.bat` (or download [Temporary_protection_disablement.bat](https://github.com/Hiddenfoxwere/windows-admin-tweaks/blob/WereFox-place/Temporary_protection_disablement.bat)** ).
   2. Double-click the file to execute (it will trigger a UAC prompt for admin rights - needed Admin right).
   3. Perform your file downloads or testing operations.
   4. Return to the console window and **press any key** to re-enable security features.
