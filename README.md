@@ -36,6 +36,20 @@ markdown#### 🌐 1. Browser Download Protection
  
      <img width="512" height="207" alt="image" src="https://github.com/user-attachments/assets/f4cd65e3-dee4-4796-b51f-026f80aa3132" />
 
+   * **Behavior Note:** 
+    If you attempt to download a "suspicious file," it will download to a temporary directory first. The file will only be moved to your destination folder after you click "Confirm" to download the suspicious file.
+
+  > [!IMPORTANT]
+    > You may see a "right arrow" icon as shown in the screenshot below. Clicking on the file in the list again will bring up the confirmation window, but not before.
+
+    *Screenshot:*
+
+    <img width="320" height="86" alt="image" src="https://github.com/user-attachments/assets/e1595ff1-ee7d-4d57-934c-f56ba44f7ae6" />
+
+    *Screenshot after clicking on the file in the download list:*
+
+    <img width="447" height="184" alt="image" src="https://github.com/user-attachments/assets/23948070-bfc0-4bc5-92d2-7836cd73d20f" />
+
 
 
 * **Microsoft Edge:**
@@ -89,6 +103,17 @@ markdown#### 🌐 1. Browser Download Protection
      
   <img width="510" height="237" alt="image" src="https://github.com/user-attachments/assets/ca1e7a23-23c1-44c1-8b60-44f803f4ad4a" />
 
+  4. Если вы попытаетесь загрузить "подозрительный файл" - файл скачается во временную дирректорию и переместиться после нажатия "подтверждения" о загрузке подозрительный Файл (важное уточнение вы можете увидеть стрелочку "вправо" как на этом скриншоте, после нажатия снова на этом файле будет открыто окно о подтверждении, но не раньше).
+
+     *Скриншот:*
+
+  <img width="320" height="86" alt="image" src="https://github.com/user-attachments/assets/e1595ff1-ee7d-4d57-934c-f56ba44f7ae6" />
+
+    *Скриншот после нажатия на файл в списке загрузки:*
+      
+  <img width="447" height="184" alt="image" src="https://github.com/user-attachments/assets/23948070-bfc0-4bc5-92d2-7836cd73d20f" />
+
+ 
 * **Microsoft Edge:**
 
   1. Перейдите по адресу: `edge://settings/privacy/security`
