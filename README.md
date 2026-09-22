@@ -16,10 +16,24 @@ Welcome to the **"Hidden Fox"** repository. All features and tweaks are actively
 
 ### 📂 Configuration & Visual Guides (Windows 10 Only)
 
-#### 🌐 1. Browser Download Protection
+markdown#### 🌐 1. Browser Download Protection
 *Steps and visual guides for disabling built-in browser download blocks.*
-* **Screenshots:**
-  ![Browser Settings Guide](path-to-your-screenshot1.png)
+
+* **Google Chrome:**
+  *Description of the steps for Chrome goes here.*
+  ![Google Chrome Settings Guide](path-to-chrome-screenshot.png)
+
+* **Microsoft Edge:**
+
+  1. Navigate to: `edge://settings/privacy`
+  
+  2. Steps for Microsoft Defender SmartScreen — *skipped*.
+
+  3. Locate the **Microsoft Defender SmartScreen** option and toggle the switch to **Off**.
+     
+     *Visual Guide:*
+
+     <img width="1241" height="414" alt="image" src="https://github.com/user-attachments/assets/77df5f34-110f-4a9c-8035-823320ad535d" />
 
 #### 🔹 2. Registry Tweaks (.reg)
 *Registry modifications tested on Windows 10.*
@@ -42,12 +56,43 @@ Welcome to the **"Hidden Fox"** repository. All features and tweaks are actively
 ### 📂 Руководства и скриншоты (Только для Windows 10)
 
 #### 🌐 1. Защита от скачивания в браузерах
-*Пошаговые инструкции и скриншоты для отключения встроенных блокировок загрузки в браузерах.*
-* **Скриншоты настроек:**
-  ![Инструкция по настройке браузера](path-to-your-screenshot1.png)
+*Пошаговые инструкции и скриншоты для отключения встроенных блокировок загрузки в популярных браузерах.*
+
+* **Google Chrome:**
+
+  1. Перейдите по адресу: `chrome://settings/security`
+  
+  2. В разделе **Безопасный просмотр** выберите пункт **Защита отключена (не рекомендуется)**.
+  
+  *Скриншот настройки:*
+  
+  <img width="685" height="385" alt="image" src="https://github.com/user-attachments/assets/0f850725-226e-41aa-b859-9b6d7039a76b" />
+  
+  3. Подтвердите действие во всплывающем окне, нажав кнопку **Отключить**.
+     
+     *Скриншот подтверждения:*
+     
+  <img width="510" height="237" alt="image" src="https://github.com/user-attachments/assets/ca1e7a23-23c1-44c1-8b60-44f803f4ad4a" />
+
+* **Microsoft Edge:**
+
+  1. Перейдите по адресу: `edge://settings/privacy/security`
+     
+  2. Шаги по SmartScreen в Microsoft Defender  - пропущены.
+
+  3. Найдите пункт Защита от опасных сайтов и загрузок - переключите тумблер в положение Выкл.
+
+  *Скриншот настройки:*
+
+  <img width="796" height="561" alt="image" src="https://github.com/user-attachments/assets/3875c4f2-4825-410e-ab5b-dac79fcf1004" />
+
 
 #### 🔹 2. Твики реестра (.reg)
 *Модификации реестра, протестированные в среде Windows 10.*
 
+- Здесь пока пусто -
+
 #### 🔹 3. Групповые политики (gpedit.msc)
 *Конфигурации системных политик для Windows 10 Pro / Enterprise.*
+
+- Здесь пока пусто -
