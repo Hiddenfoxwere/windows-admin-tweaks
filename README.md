@@ -20,8 +20,23 @@ markdown#### 🌐 1. Browser Download Protection
 *Steps and visual guides for disabling built-in browser download blocks.*
 
 * **Google Chrome:**
-  *Description of the steps for Chrome goes here.*
-  ![Google Chrome Settings Guide](path-to-chrome-screenshot.png)
+
+  1. Navigate to: `chrome://settings/security`
+  
+  2. In the **Safe Browsing** section, select **No protection (not recommended)**.
+     
+     *Visual Guide:*
+     
+     <img width="987" height="447" alt="image" src="https://github.com/user-attachments/assets/6bf08f12-56fc-4e74-a39a-34ac2eda57d4" />
+
+
+  4. Confirm the action in the pop-up window by clicking **Turn off**.
+     
+     *Confirmation:*
+ 
+     <img width="512" height="207" alt="image" src="https://github.com/user-attachments/assets/f4cd65e3-dee4-4796-b51f-026f80aa3132" />
+
+
 
 * **Microsoft Edge:**
 
