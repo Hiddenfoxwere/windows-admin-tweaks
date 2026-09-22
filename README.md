@@ -134,7 +134,7 @@ This repository is a curated collection of system administration tweaks and visu
 
 Welcome to the **"Hidden Fox"** repository. All features and tweaks are actively tested on Windows 10.
 
-> [!WARNING]
+>  [!WARNING]
 > **Disclaimer:** Please keep in mind that everything provided here is publicly available; use it at your own risk and remember to create a restore point. Disabling security functions may expose your system to threats. By proceeding, you assume full responsibility for all risks. Content is provided "as-is."
 
 ### 📂 Configuration & Visual Guides (Windows 10 Only)
@@ -162,8 +162,8 @@ Welcome to the **"Hidden Fox"** repository. All features and tweaks are actively
    * **Behavior Note:** 
     If you attempt to download a "suspicious file," it will download to a temporary directory first. The file will only be moved to your destination folder after you click "Confirm" to download the suspicious file.
 
-    [!IMPORTANT]
-    > You may see a "right arrow" icon as shown in the screenshot below. Clicking on the file in the list again will bring up the confirmation window, but not before.
+    > [!IMPORTANT]
+> You may see a "right arrow" icon as shown in the screenshot below. Clicking on the file in the list again will bring up the confirmation window, but not before.
 
     *Screenshot:*
 
