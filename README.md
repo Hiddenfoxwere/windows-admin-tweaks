@@ -64,10 +64,65 @@ markdown#### 🌐 1. Browser Download Protection
 
      <img width="1241" height="414" alt="image" src="https://github.com/user-attachments/assets/77df5f34-110f-4a9c-8035-823320ad535d" />
 
-#### 🔹 2. Registry Tweaks (.reg)
+#### 🔹 2. Temporary Security Bypass Script (.bat)
+An all-in-one batch script that automatically requests admin privileges, disables Windows Firewall and SmartScreen, and securely restores all settings back to their original state once the user presses any key.
+
+* **How to use:**
+  1. Save the code into a file named `Temporary_protection_disablement.bat` (or download https://github.com/Hiddenfoxwere/windows-admin-tweaks/blob/WereFox-place/Temporary_protection_disablement.bat ).
+  2. Double-click the file to execute (it will trigger a UAC prompt for admin rights - needed Admin right).
+  3. Perform your file downloads or testing operations.
+  4. Return to the console window and **press any key** to re-enable security features.
+ 
+  <details>
+<summary>🔍 View Script Source Code</summary>
+
+```batch
+@echo off
+net session >nul 2>&1
+if %errorLevel% == 0 ( goto :AdminTasks ) else ( goto :Elevate )
+:Elevate
+echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
+echo UAC.ShellExecute "cmd.exe", "/c ""%~s0"" %*", "", "runas", 1 >> "%temp%\getadmin.vbs"
+"%temp%\getadmin.vbs"
+del "%temp%\getadmin.vbs"
+exit /b
+:AdminTasks
+chcp 65001 > nul
+title Windows 10 Temporary Security Bypass
+echo ==================================================
+echo ОТКЛЮЧЕНИЕ ЗАЩИТЫ WINDOWS / DISABLING SECURITY...
+echo ==================================================
+echo [*] Отключение Брандмауэра (Windows Firewall)...
+powershell -Command "Set-NetFirewallProfile -Profile Domain, Public, Private -Enabled False"
+echo [*] Отключение SmartScreen...
+powershell -Command "Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer' -Name 'SmartScreenEnabled' -Value 'Off'"
+powershell -Command "if (-not (Test-Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\System')) { New-Item -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows' -Name 'System' -Force | Out-Null }; Set-ItemProperty -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\System' -Name 'EnableSmartScreen' -Value 0"
+echo.
+echo [✔] Защита временно отключена!
+echo Оставьте это окно ОТКРЫТЫМ. После завершения задач нажмите любую клавишу.
+echo ==================================================
+echo.
+pause
+echo.
+echo ==================================================
+echo ВКЛЮЧЕНИЕ ЗАЩИТЫ ОБРАТНО / RE-ENABLING SECURITY...
+echo ==================================================
+echo [*] Включение Брандмауэра обратно...
+powershell -Command "Set-NetFirewallProfile -Profile Domain, Public, Private -Enabled True"
+echo [*] Включение SmartScreen обратно...
+powershell -Command "Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer' -Name 'SmartScreenEnabled' -Value 'RequireAdmin'"
+powershell -Command "Set-ItemProperty -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\System' -Name 'EnableSmartScreen' -Value 1"
+echo.
+echo [✔] Безопасность системы полностью восстановлена!
+timeout /t 5
+```
+</details>
+
+
+#### 🔹 3. Registry Tweaks (.reg)
 *Registry modifications tested on Windows 10.*
 
-#### 🔹 3. Group Policy Settings (gpedit.msc)
+#### 🔹 4. Group Policy Settings (gpedit.msc)
 *System-wide policy configurations.*
 
 ---
@@ -126,13 +181,69 @@ markdown#### 🌐 1. Browser Download Protection
 
   <img width="796" height="561" alt="image" src="https://github.com/user-attachments/assets/3875c4f2-4825-410e-ab5b-dac79fcf1004" />
 
+#### 🔹 2. Скрипт временного отключения защиты (.bat)
+Пакетный файл автоматизирует процесс: самостоятельно запрашивает права администратора, отключает Брандмауэр и SmartScreen, а после нажатия любой клавиши в консоли корректно возвращает все параметры безопасности в исходное состояние.
 
-#### 🔹 2. Твики реестра (.reg)
+
+
+* **Инструкция по использованию:**
+  1. Создайте файл `Temporary_protection_disablement.bat` и скопируйте в него код скрипта (Или загрузите https://github.com/Hiddenfoxwere/windows-admin-tweaks/blob/WereFox-place/Temporary_protection_disablement.bat.
+  2. Запустите файл двойным кликом (система сама запросит права Администратора - нужны права Админа).
+  3. Выполните необходимые действия по загрузке или тестированию.
+  4. Вернитесь в окно консоли и **нажмите любую кнопку**, чтобы вернуть настройки безопасности назад.
+ 
+  <details>
+<summary>🔍 Посмотреть исходный код скрипта</summary>
+
+```batch
+@echo off
+net session >nul 2>&1
+if %errorLevel% == 0 ( goto :AdminTasks ) else ( goto :Elevate )
+:Elevate
+echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
+echo UAC.ShellExecute "cmd.exe", "/c ""%~s0"" %*", "", "runas", 1 >> "%temp%\getadmin.vbs"
+"%temp%\getadmin.vbs"
+del "%temp%\getadmin.vbs"
+exit /b
+:AdminTasks
+chcp 65001 > nul
+title Windows 10 Temporary Security Bypass
+echo ==================================================
+echo ОТКЛЮЧЕНИЕ ЗАЩИТЫ WINDOWS / DISABLING SECURITY...
+echo ==================================================
+echo [*] Отключение Брандмауэра (Windows Firewall)...
+powershell -Command "Set-NetFirewallProfile -Profile Domain, Public, Private -Enabled False"
+echo [*] Отключение SmartScreen...
+powershell -Command "Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer' -Name 'SmartScreenEnabled' -Value 'Off'"
+powershell -Command "if (-not (Test-Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\System')) { New-Item -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows' -Name 'System' -Force | Out-Null }; Set-ItemProperty -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\System' -Name 'EnableSmartScreen' -Value 0"
+echo.
+echo [✔] Защита временно отключена!
+echo Оставьте это окно ОТКРЫТЫМ. После завершения задач нажмите любую клавишу.
+echo ==================================================
+echo.
+pause
+echo.
+echo ==================================================
+echo ВКЛЮЧЕНИЕ ЗАЩИТЫ ОБРАТНО / RE-ENABLING SECURITY...
+echo ==================================================
+echo [*] Включение Брандмауэра обратно...
+powershell -Command "Set-NetFirewallProfile -Profile Domain, Public, Private -Enabled True"
+echo [*] Включение SmartScreen обратно...
+powershell -Command "Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer' -Name 'SmartScreenEnabled' -Value 'RequireAdmin'"
+powershell -Command "Set-ItemProperty -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\System' -Name 'EnableSmartScreen' -Value 1"
+echo.
+echo [✔] Безопасность системы полностью восстановлена!
+timeout /t 5
+```
+</details>
+
+
+#### 🔹 3. Твики реестра (.reg)
 *Модификации реестра, протестированные в среде Windows 10.*
 
 - Здесь пока пусто -
 
-#### 🔹 3. Групповые политики (gpedit.msc)
+#### 🔹 4. Групповые политики (gpedit.msc)
 *Конфигурации системных политик для Windows 10 Pro / Enterprise.*
 
 - Здесь пока пусто -
