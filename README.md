@@ -16,7 +16,7 @@ Welcome to the **"Hidden Fox"** repository. All features and tweaks are actively
 
 ### 📂 Configuration & Visual Guides (Windows 10 Only)
 
-markdown#### 🌐 1. Browser Download Protection
+🌐 1. Browser Download Protection
 *Steps and visual guides for disabling built-in browser download blocks.*
 
 * **Google Chrome:**
@@ -39,7 +39,7 @@ markdown#### 🌐 1. Browser Download Protection
    * **Behavior Note:** 
     If you attempt to download a "suspicious file," it will download to a temporary directory first. The file will only be moved to your destination folder after you click "Confirm" to download the suspicious file.
 
-  > [!IMPORTANT]
+  >  [!IMPORTANT]
     > You may see a "right arrow" icon as shown in the screenshot below. Clicking on the file in the list again will bring up the confirmation window, but not before.
 
     *Screenshot:*
