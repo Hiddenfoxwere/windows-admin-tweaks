@@ -139,7 +139,7 @@ Welcome to the **"Hidden Fox"** repository. All features and tweaks are actively
 
 ### 📂 Configuration & Visual Guides (Windows 10 Only)
 
-🌐 1. Browser Download Protection
+#### 🌐 1. Browser Download Protection
 *Steps and visual guides for disabling built-in browser download blocks.*
 
 * **Google Chrome:**
