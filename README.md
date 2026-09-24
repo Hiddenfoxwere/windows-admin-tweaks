@@ -21,7 +21,7 @@
 
 * **Google Chrome:**
 
-  1. Перейдите по адресу: `chrome://settings/security`
+  1. Перейдите по адресу в браузере: `chrome://settings/security`
   
   2. В разделе **Безопасный просмотр** выберите пункт **Защита отключена (не рекомендуется)**.
   
@@ -48,15 +48,29 @@
  
 * **Microsoft Edge:**
 
-  1. Перейдите по адресу: `edge://settings/privacy/security`
+  1. Перейдите по адресу в браузере: `edge://settings/privacy/security`
      
   2. Шаги по SmartScreen в Microsoft Defender  - пропущены.
 
-  3. Найдите пункт Защита от опасных сайтов и загрузок - переключите тумблер в положение Выкл.
+  3. Найдите пункт - Защита от опасных сайтов и загрузок - переключите тумблер в положение Выкл.
 
   *Скриншот настройки:*
 
   <img width="796" height="561" alt="image" src="https://github.com/user-attachments/assets/3875c4f2-4825-410e-ab5b-dac79fcf1004" />
+
+* **Яндекс.Браузера:**
+
+  1. В официальных руководствах отмечено, что программа цепляется за антивирус, поэтому для успешного отключения контроля загрузки на первом месте стоят антивирусы, после их отключения следует пункт 2.
+ 
+  2. Перейдите по адресу в браузере: `browser://protect`
+ 
+  3. Найдите пункт - Проверять безопасность посещаемых сайтов и загружаемых файлов. - и Выключите этот пункт.
+ 
+   *Скриншот настройки:*
+
+  <img width="1447" height="822" alt="Screenshot_1" src="https://github.com/user-attachments/assets/f0b5b807-160b-4fb8-9263-1fe9d8913b0f" />
+
+
 
 #### 🔹 2. Скрипт временного отключения защиты (.bat)
 Пакетный файл автоматизирует процесс: самостоятельно запрашивает права администратора, отключает Брандмауэр и SmartScreen, а после нажатия любой клавиши в консоли корректно возвращает все параметры безопасности в исходное состояние.
@@ -186,6 +200,21 @@ Welcome to the **"Hidden Fox"** repository. All features and tweaks are actively
      *Visual Guide:*
 
      <img width="1241" height="414" alt="image" src="https://github.com/user-attachments/assets/77df5f34-110f-4a9c-8035-823320ad535d" />
+
+* **Yandex.Browser:**
+
+  1. 1. According to official guides, the browser's built-in protection is tightly integrated with your antivirus software. Therefore, to successfully disable download control, you must temporarily disable your antivirus first before proceeding to step 2.
+ 
+  2. Navigate to the following address in your browser: `browser://protect`
+ 
+  3. Locate the option **"Run security ckeck on websites and downloaded files"** - and toggle it **Off**.
+ 
+   *Settings Screenshot:*
+
+  <img width="1458" height="662" alt="image" src="https://github.com/user-attachments/assets/6ef9ce28-8e5f-4a88-803b-e44fcab6506d" />
+
+
+  
 
 #### 🔹 2. Temporary Security Bypass Script (.bat)
 An all-in-one batch script that automatically requests admin privileges, disables Windows Firewall and SmartScreen, and securely restores all settings back to their original state once the user presses any key.
