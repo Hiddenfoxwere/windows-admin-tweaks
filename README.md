@@ -48,11 +48,11 @@
  
 * **Microsoft Edge:**
 
-  1. Перейдите по адресу в браузере: `edge://settings/privacy/security`
+  1\. Перейдите по адресу в браузере: `edge://settings/privacy/security`
      
-  2. Шаги по SmartScreen в Microsoft Defender  - пропущены.
+  2\. Шаги по SmartScreen в Microsoft Defender  - пропущены.
 
-  3. Найдите пункт - Защита от опасных сайтов и загрузок - переключите тумблер в положение Выкл.
+  3\. Найдите пункт - Защита от опасных сайтов и загрузок - переключите тумблер в положение Выкл.
 
   *Скриншот настройки:*
 
@@ -60,11 +60,11 @@
 
 * **Яндекс.Браузера:**
 
-  1. В официальных руководствах отмечено, что программа цепляется за антивирус, поэтому для успешного отключения контроля загрузки на первом месте стоят антивирусы, после их отключения следует пункт 2.
+  1\. В официальных руководствах отмечено, что программа цепляется за антивирус, поэтому для успешного отключения контроля загрузки на первом месте стоят антивирусы, после их отключения следует пункт 2.
  
-  2. Перейдите по адресу в браузере: `browser://protect`
+  2\. Перейдите по адресу в браузере: `browser://protect`
  
-  3. Найдите пункт - Проверять безопасность посещаемых сайтов и загружаемых файлов. - и Выключите этот пункт.
+  3\. Найдите пункт - Проверять безопасность посещаемых сайтов и загружаемых файлов. - и Выключите этот пункт.
  
    *Скриншот настройки:*
 
@@ -78,10 +78,10 @@
 
 
 * **Инструкция по использованию:**
-  1. Создайте файл `Temporary_protection_disablement.bat` и скопируйте в него код скрипта (Или загрузите [Temporary_protection_disablement.bat](https://github.com/Hiddenfoxwere/windows-admin-tweaks/blob/WereFox-place/Temporary_protection_disablement.bat))
-  2. Запустите файл двойным кликом (система сама запросит права Администратора - нужны права Админа).
-  3. Выполните необходимые действия по загрузке или тестированию.
-  4. Вернитесь в окно консоли и **нажмите любую кнопку**, чтобы вернуть настройки безопасности назад.
+  1\. Создайте файл `Temporary_protection_disablement.bat` и скопируйте в него код скрипта (Или загрузите [Temporary_protection_disablement.bat](https://github.com/Hiddenfoxwere/windows-admin-tweaks/blob/WereFox-place/Temporary_protection_disablement.bat))
+  2\. Запустите файл двойным кликом (система сама запросит права Администратора - нужны права Админа).
+  3\. Выполните необходимые действия по загрузке или тестированию.
+  4\. Вернитесь в окно консоли и **нажмите любую кнопку**, чтобы вернуть настройки безопасности назад.
  
   <details>
 <summary>🔍 Посмотреть исходный код скрипта</summary>
@@ -158,16 +158,16 @@ Welcome to the **"Hidden Fox"** repository. All features and tweaks are actively
 
 * **Google Chrome:**
 
-  1. Navigate to: `chrome://settings/security`
+  1\. Navigate to: `chrome://settings/security`
   
-  2. In the **Safe Browsing** section, select **No protection (not recommended)**.
+  2\. In the **Safe Browsing** section, select **No protection (not recommended)**.
      
      *Visual Guide:*
      
      <img width="987" height="447" alt="image" src="https://github.com/user-attachments/assets/6bf08f12-56fc-4e74-a39a-34ac2eda57d4" />
 
 
-  4. Confirm the action in the pop-up window by clicking **Turn off**.
+  4\. Confirm the action in the pop-up window by clicking **Turn off**.
      
      *Confirmation:*
  
@@ -191,11 +191,11 @@ Welcome to the **"Hidden Fox"** repository. All features and tweaks are actively
 
 * **Microsoft Edge:**
 
-  1. Navigate to: `edge://settings/privacy`
+  1\. Navigate to: `edge://settings/privacy`
   
-  2. Steps for Microsoft Defender SmartScreen — *skipped*.
+  2\. Steps for Microsoft Defender SmartScreen — *skipped*.
 
-  3. Locate the **Microsoft Defender SmartScreen** option and toggle the switch to **Off**.
+  3\. Locate the **Microsoft Defender SmartScreen** option and toggle the switch to **Off**.
      
      *Visual Guide:*
 
@@ -203,11 +203,11 @@ Welcome to the **"Hidden Fox"** repository. All features and tweaks are actively
 
 * **Yandex.Browser:**
 
-  1. 1. According to official guides, the browser's built-in protection is tightly integrated with your antivirus software. Therefore, to successfully disable download control, you must temporarily disable your antivirus first before proceeding to step 2.
+  1\. 1. According to official guides, the browser's built-in protection is tightly integrated with your antivirus software. Therefore, to successfully disable download control, you must temporarily disable your antivirus first before proceeding to step 2.
  
-  2. Navigate to the following address in your browser: `browser://protect`
+  2\. Navigate to the following address in your browser: `browser://protect`
  
-  3. Locate the option **"Run security ckeck on websites and downloaded files"** - and toggle it **Off**.
+  3\. Locate the option **"Run security ckeck on websites and downloaded files"** - and toggle it **Off**.
  
    *Settings Screenshot:*
 
